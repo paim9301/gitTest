@@ -15,6 +15,7 @@ namespace gitTest
                 var myTextHash = BitConverter.ToString(arg0Hash).Replace("-", "");
                 Console.WriteLine(myTextHash);
             }
+            Console.WriteLine($"that it !");
             Console.ReadLine();
         }
     }
