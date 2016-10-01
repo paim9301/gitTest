@@ -9,7 +9,6 @@ namespace gitTest
         public static void Main(string[] args)
         {
             const bool vaMieux = true;
-            const bool neVaPasMieux = false;
 
             #region TEST MD5
 
@@ -28,10 +27,7 @@ namespace gitTest
 
             var santeEmilie = new Random();
             var etatEmilie = santeEmilie.Next(100) < 50 ? true : false;
-            if (etatEmilie == vaMieux)
-                Console.WriteLine(@"Émilie va au cims lundi.");
-            else if (etatEmilie.Equals(neVaPasMieux))
-                Console.WriteLine("Les gens du cims seront triste :(.");
+            Console.WriteLine(etatEmilie == vaMieux ? @"Émilie va au cims lundi." : "Les gens du cims seront triste :(.");
             Console.ReadLine();
 
             #endregion
